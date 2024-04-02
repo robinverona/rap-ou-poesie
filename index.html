@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static starter</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body class="index">
+    <div class="gallery">
+        <div class="square bg-1"></div>
+        <div class="square bg-2"></div>
+        <div class="square bg-3"></div>
+        <div class="square bg-4"></div>
+        <!-- <div class="block block-9 bg-error"></div>
+        <div class="block block-14"></div>
+
+        <div class="block block-4 blue"></div>
+        <div class="block block-1 purple"></div>
+        <div class="block block-2 yellow"></div>
+        <div class="block block-3 brown"></div>
+        <div class="block block-5 pink"></div>
+        <div class="block block-6 orange"></div>
+        <div class="block block-7 bg-success"></div>
+        <div class="block block-8 purple"></div>
+        <div class="block block-10 bg-success"></div>
+        <div class="block block-11 skyblue"></div>
+        <div class="block block-12 brown"></div>
+        <div class="block block-13 orange"></div>
+        <div class="block block-15"></div> -->
+
+
+    </div>
+    <header class="masthead">
+        <a href="#" data-url="./about.html" class="link">A propos</a>
+        <!-- <a href="./index.html" class="brand">Rap ou Poésie</a> -->
+        <button id="mobileMenu">Menu</button>
+        <a href="#" data-url="./share.html" class="link">Partager</a>
+    </header>
+    <main class="">
+        <img src="./images/logo.svg" alt="">
+        <div class="settings">
+            <p>Choisir le nombre de citations :</p>
+            <input id="settingsRange" type="range" min="1" max="100" value="10" class="slider">
+            <span id="settingsValue"></span>
+        </div>
+        <button id="playButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 256 256">
+                <path
+                  fill="#11111"
+                  d="M240 128a15.74 15.74 0 0 1-7.6 13.51L88.32 229.65a16 16 0 0 1-16.2.3A15.86 15.86 0 0 1 64 216.13V39.87a15.86 15.86 0 0 1 8.12-13.82a16 16 0 0 1 16.2.3l144.08 88.14A15.74 15.74 0 0 1 240 128Z"
+                />
+              </svg>
+        </button>
+        <!-- <div>
+            <a id="playButton" class="link" href="#" data-url="./app.html">Commencer</a>
+
+        </div> -->
+    </main>
+    <footer>
+        <span></span>
+        <div class="counter"></div>
+        <a class="link" href="">Crédits</a>
+    </footer>
+    <div class="curtain"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

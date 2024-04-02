@@ -1,0 +1,205 @@
+#playButton {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulsePlay 2s infinite;
+    border: none;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 10;
+    @keyframes pulsePlay {
+        0% {
+          transform: translateX(-50%) scale(1);
+        }
+        50% {
+          transform: translateX(-50%) scale(1.1);
+        }
+        100% {
+          transform: translateX(-50%) scale(1);
+        }
+      }
+    
+      &:hover {
+        background-color: #111;
+        color: white;
+        box-shadow: 0px 0px 10px 3px #111;
+
+        & svg {
+            fill: white;
+        }
+      }
+    
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    
+}
+
+
+
+#rap, #poetry {
+    width: 50%;
+    // border: red solid 1px;
+    position: fixed;
+    bottom: 20px;
+    height: 100px;
+    // font-size: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // text-decoration: underline;
+    // text-decoration-thickness: 1px;
+    cursor: pointer;
+    z-index: 99;
+
+    & .link {
+        font-size: 18px;
+
+    }
+}
+
+#rap {
+    left: 0;
+    // margin-right: 100px;
+}
+
+#poetry {
+    right: 0;
+    // margin-left: 100px;
+
+}
+
+@include for-tablet-portrait-up {
+    .hover-semicircle {
+        height: 100%;
+        width: 0;
+        position: absolute;
+        background-color: var(--color-on-bg);
+        opacity: 10%;
+        transition: all 0.4s;
+    }
+
+    
+    #rap .hover-semicircle{
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    #poetry .hover-semicircle{
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #rap, #poetry {
+        width: 50%;
+        bottom: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+
+        // transition: 1.5 ease;
+
+        & .link {
+            font-size: 64px;
+
+        }
+    }
+
+
+
+    #rap {
+        // background-color: rosybrown;
+        transition: all 0.4s;
+        position: relative;
+        left: 0;
+
+        & p {
+            mix-blend-mode: difference;
+            transition: all 0.4s;
+            left: 0;
+        }
+        &:hover p {
+            left: -25px;
+            // opacity: 0.6;
+            // background-color: black;
+            // color: white;
+        }
+
+        &:hover ~ .card-deck .card {
+            transform: rotate(-10deg);
+        }
+        &:hover .hover-semicircle {
+            width: 50%;
+
+        }
+
+        &:hover .link::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 2, 1);
+            transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+        }
+
+        &:hover .link::after {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+            transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+        }
+    }
+
+    #poetry {
+        transition: all 0.4s;
+        position: relative;
+
+        & p {
+            transition: all 0.4s;
+            right: 0;
+
+        }
+
+        &:hover p {
+            right: -25px;
+        }
+        &:hover {
+            // right: -50px;
+            // opacity: 0.6;
+            // background-color: black;
+            // color: white;
+        }
+
+        &:hover .hover-semicircle {
+            width: 50%;
+
+        }
+
+        &:hover + .card-deck .card {
+            transform: rotate(10deg);
+        }
+
+        &:hover .link::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 2, 1);
+            transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+        }
+
+        &:hover .link::after {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
+            transition-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+        }
+    }
+}

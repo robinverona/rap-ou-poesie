@@ -1,0 +1,221 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color-on-bg);
+    scroll-behavior: smooth;
+    font-family: "Inter Tight", sans-serif;;
+
+}
+
+.curtain {
+    height: 0;
+    width: 100vw;
+    background-color: #111111;
+    transition: height 0.4s ease-in;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    &.open {
+        height: 100%;
+    }
+}
+
+// .logo {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: var(--spacer-regular);
+//     font-size: 64px;
+
+//     & .rap {
+//         transform: rotate(-20deg);
+//     }
+
+//     & .poetry {
+//         transform: rotate(20deg);
+//     }
+// }
+
+// .index {
+//     background-color: #111;
+// }
+
+// .results {
+//     background-color: #111;
+// }
+
+
+.index main {
+    flex-direction: column;
+    // background-color: rgba($color: #111, $alpha: 0.8);
+    // backdrop-filter: blur(7px);
+    height: 100vh;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+
+    & .settings {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        & p {
+            margin-bottom: var(--spacer-xs);
+        }
+        & input {
+            // margin-top: calc(var(--spacer-xs) / 2);
+            margin-bottom: calc(var(--spacer-xs));
+        }
+
+        & #settingsValue {
+            margin-top: 20px;
+        }
+    }
+
+    & h1 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacer-regular);
+    }
+
+    & .link {
+        margin-top: var(--spacer-regular);
+        font-size: 32px;
+    }
+}
+
+#dot {
+    // transform-origin: top left;
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    // left: 50%;
+    // top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    // background-color: red;
+    z-index: -1;
+}
+
+
+@include for-tablet-portrait-up {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    
+        &.index {
+            flex-direction: column;
+            // backdrop-filter: blur(7px);
+    
+        }
+    
+        & .settings {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            & input {
+                margin-top: calc(var(--spacer-xs) / 2);
+                margin-bottom: calc(var(--spacer-xs) / 3);
+            }
+        }
+    
+        & h1 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacer-regular);
+        }
+    
+        & .link {
+            margin-top: var(--spacer-regular);
+        }
+    }
+ 
+
+}
+
+
+    .bg-purple {
+        background-color: rgba($color: #7064a5, $alpha: 1);
+        filter: brightness(85%);
+    }
+    
+    .bg-yellow {
+        background-color: rgba($color: #f2f046, $alpha: 1);
+        filter: brightness(85%);
+    }
+    
+    .bg-grey {
+    
+        background-color: rgba($color: #535150, $alpha: 1);
+        filter: brightness(85%);
+
+    }
+    
+    .bg-skyblue {
+        background-color: rgba($color: #4c8ec2, $alpha: 1);
+        filter: brightness(85%);
+
+    }
+    
+    .bg-pink {
+        background-color: rgba($color: #f98f84, $alpha: 1);
+        filter: brightness(85%);
+    }
+    
+    .bg-green {
+        background-color: rgba($color: #439a7c, $alpha: 1);
+        filter: brightness(85%);
+    }
+    
+    .bg-blue {
+        background-color: rgba($color: #588dcf, $alpha: 1);
+        filter: brightness(85%);
+    }
+    
+    .bg-brown {
+        background-color: rgba($color: #b78e68, $alpha: 1);
+        filter: brightness(85%);
+    }
+    
+    .bg-orange {
+    // background-color: #FEA347;
+        background-color: rgba($color: #fb6832, $alpha: 1);
+        filter: brightness(85%);
+    }
+
+    .bg-black {
+        background-color: rgba($color: #111111, $alpha: 1);
+        filter: brightness(85%);
+    }
+
+    .bg-nightblue {
+        background-color: rgba($color: #00032d, $alpha: 1);
+        filter: brightness(85%);
+    }
+
+    .bg-success {
+        background-color: rgba($color: #16B84E, $alpha: 1);
+        filter: brightness(85%)
+    }
+
+    .bg-error {
+        background-color: rgba($color: #FE1B00, $alpha: 1);
+        filter: brightness(85%);
+    }

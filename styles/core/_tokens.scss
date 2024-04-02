@@ -1,0 +1,48 @@
+:root {
+    --color-primary: #111; 
+    --color-secondary: #F5F5F5; 
+
+    --color-bg: var(--color-primary); 
+    --color-on-bg: var(--color-secondary); 
+
+    --color-success: #00d13c;
+    --color-alert: #FE1B00;
+    --color-warning: #ffcd29;
+
+    /* Fonts */
+    /* https://typescale.com/ */
+
+    --font-size-small: 0.667rem; 
+    --font-size-regular: 1rem; 
+    --font-size-large: 1.5rem; 
+    --font-size-xl: 2.25rem; 
+    --font-size-2xl: 3.375rem; 
+    --font-size-3xl: 5.063rem; 
+    --font-size-4xl: 7.594rem; 
+
+    --font-family-sans: "Inter Tight", sans-serif;;
+    --font-family-serif: 'serif'; 
+    --font-family-mono: 'disket_monoregular';
+
+    --text-body: var(--font-family-sans);
+    --text-headings: var(--font-family-sans);
+
+    // Spacers 
+    @include for-phone-only {
+        --spacer-xs: 20px;
+        --spacer-sm: 30px;
+        --spacer-regular: 40px;
+        --spacer-large: 100px; 
+        --spacer-xl: 60px; 
+        --spacer-xxl: 120px
+    }
+
+
+    --spacer-xs: 40px;
+    --spacer-sm: 50px;
+    --spacer-regular: 80px;
+    --spacer-large: 100px; 
+    --spacer-xl: 120px; 
+    --spacer-xxl: 200px;
+
+}

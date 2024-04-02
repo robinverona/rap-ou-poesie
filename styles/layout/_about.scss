@@ -1,0 +1,21 @@
+.about {
+    background-color: var(--color-bg);
+
+    & main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & figure {
+        height: 100%;
+        width: 40%;
+        background-color: red;
+
+    }
+
+    & section {
+        border: red solid 1px;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,221 @@
+.gallery {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    // background-image: url('../../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-style: preserve-3d;
+    perspective: 10000px;
+    background: linear-gradient(#000a58,#00051c);
+    filter: grayscale(1);
+    z-index: -1;
+}
+
+.bg-1 {
+    background: radial-gradient(#254ff4,#0a004d);
+    height: 90vw;
+    left: 50%;
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(15deg);
+    width: 90vw;
+}
+
+.bg-2 {
+    border-radius: 40px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(#000a58,#00051c);
+    height: 45vw;
+    transform: translate(-50%,-50%) rotate(7deg);
+    width: 45vw;
+    z-index: 3;
+}
+
+.bg-3 {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    background: radial-gradient(#2162e1 -30%,#0a004d 80%);
+    height: 23vw;
+    transform: translate(-50%,-50%) rotate(17deg);
+    width: 23vw;
+    z-index: 4;
+    border-radius: 40px;
+}
+
+.bg-4 {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(#000a58,#00051c);
+  border-radius: 40px;
+  height: 15vw;
+  transform: translate(-50%,-50%) rotate(45deg);
+  width: 15vw;
+  z-index: 5;
+}
+
+.block {
+    position: fixed;
+    // background-color: red;
+    transform-style: preserve-3d;
+    // transform: translateZ(1750px);
+    width: 274px;
+    height: 438px;
+    border-radius: 1rem;
+    // top: 40%;
+    // left: 40%;
+
+}
+
+.block-1 {
+    top: -100px;
+    left: 0;
+    transform: translateZ(1750px) rotate(20deg);
+    width: 320px;
+    filter: blur(10px);
+
+}
+
+.block-2 {
+    top: -300px;
+    left: 25%;
+    transform: translateZ(1750px) rotate(-30deg);
+    width: 400px;
+    height: 600px;
+    filter: blur(10px);
+
+}
+
+.block-3 {
+    top: -10%;
+    right: -50px;
+    transform: translateZ(1750px) rotate(20deg);
+    width: 400px;
+    filter: blur(10px);
+}
+
+.block-4 {
+    top: 30%;
+    left: 10%;
+    transform: translateZ(1750px) rotate(-25deg);
+    filter: blur(4px);
+
+}
+
+.block-5 {
+    bottom: -50px;
+    left: -50px;
+    transform: translateZ(1750px) rotate(30deg);
+    filter: blur(10px);
+
+}
+
+.block-6 {
+    bottom: 50px;
+    left: 30%;
+    transform: translateZ(1750px) rotate(20deg);
+    width: 200px;
+    height: 300px;
+    filter: blur(4px);
+
+}
+
+.block-7 {
+    bottom: -200px;
+    left: 45%;
+    transform: translateZ(1750px) rotate(-15deg);
+    filter: blur(10px);
+
+}
+
+.block-8 {
+    bottom: -200px;
+    right: 20px;
+    transform: translateZ(1750px) rotate(-20deg);
+    width: 400px;
+    height: 600px;
+    filter: blur(10px);
+
+}
+
+.block-9 {
+    top: 45%;
+    left: 65%;
+    transform: translateZ(1750px) rotate(20deg);
+
+}
+
+.block-10 {
+    top: 32%;
+    left: 46%;
+    transform: translateZ(1750px) rotate(20deg);
+    width: 90px;
+    height: 150px;
+}
+
+.block-11 {
+    top: 57%;
+    left: 43%;
+    transform: translateZ(1750px) rotate(-20deg);
+    width: 45px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.block-12 {
+    top: 58%;
+    left: 54%;
+    transform: translateZ(1750px) rotate(20deg);
+    width: 45px;
+    height: 80px;
+    border-radius: 5px;
+ 
+}
+
+.block-13 {
+    top: 60%;
+    left: 48%;
+    transform: translateZ(1750px) rotate(-20deg);
+    width: 16px;
+    height: 28px;
+    border-radius: 2px;
+
+}
+
+.block-14 {
+    top: 40%;
+    left: 30%;
+    transform: translateZ(1750px) rotate(-10deg);
+    width: 100px;
+    height: 180px;
+    border-radius: 2px;
+    background-color: #F5F5F5;
+
+}
+
+.block-15 {
+    top: -30%;
+    left: 55%;
+    transform: translateZ(1750px) rotate(-10deg);
+    width: 400px;
+    height: 680px;
+    border-radius: 1rem;
+    background-color: #F5F5F5;
+    filter: blur(10px);
+
+}
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
+// translateZ(1750px)
