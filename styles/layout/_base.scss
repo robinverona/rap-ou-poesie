@@ -7,8 +7,10 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     color: var(--color-on-bg);
-    scroll-behavior: smooth;
-    font-family: "Inter Tight", sans-serif;;
+    //scroll-behavior: smooth;
+    font-family: "Inter Tight", sans-serif;
+    overflow:hidden;
+    outline:4px dashed magenta;
 
 }
 
@@ -64,6 +66,8 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    // max-height:100%;
+    overflow: auto;
 
 
 
@@ -117,8 +121,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-    
+        // max-height: 100vh;
+        overflow:hidden;
+        outline:dashed 4px orangered;
+
         &.index {
             flex-direction: column;
             // backdrop-filter: blur(7px);

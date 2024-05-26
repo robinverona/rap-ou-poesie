@@ -103,8 +103,9 @@ html, body {
   margin: 0;
   box-sizing: border-box;
   color: var(--color-on-bg);
-  scroll-behavior: smooth;
   font-family: "Inter Tight", sans-serif;
+  overflow: hidden;
+  outline: 4px dashed magenta;
 }
 
 .curtain {
@@ -130,6 +131,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: auto;
 }
 main .settings {
   display: flex;
@@ -171,7 +173,8 @@ main .link {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow: hidden;
+    outline: dashed 4px orangered;
   }
   main.index {
     flex-direction: column;
@@ -666,6 +669,9 @@ footer {
 }
 
 @media (min-width: 640px) {
+  .results {
+    overflow: auto;
+  }
   .results main {
     height: max-content;
   }
@@ -681,7 +687,6 @@ footer {
   .cards__list {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 10%;
     bottom: 5%;
   }
   .results-card {
@@ -950,7 +955,7 @@ a, .link {
   justify-content: center;
   animation: pulsePlay 2s infinite;
   border: none;
-  bottom: 100px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -966,14 +971,6 @@ a, .link {
   100% {
     transform: translateX(-50%) scale(1);
   }
-}
-#playButton:hover {
-  background-color: #111;
-  color: white;
-  box-shadow: 0px 0px 10px 3px #111;
-}
-#playButton:hover svg {
-  fill: white;
 }
 #playButton svg {
   width: 25px;
@@ -1005,6 +1002,45 @@ a, .link {
 }
 
 @media (min-width: 640px) {
+  #playButton {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulsePlay 2s infinite;
+    border: none;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 10;
+  }
+  @keyframes pulsePlay {
+    0% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1);
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+  #playButton:hover {
+    background-color: #111;
+    color: white;
+    box-shadow: 0px 0px 10px 3px #111;
+  }
+  #playButton:hover svg {
+    fill: white;
+  }
+  #playButton svg {
+    width: 25px;
+    height: 25px;
+  }
   .hover-semicircle {
     height: 100%;
     width: 0;
