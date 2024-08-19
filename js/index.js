@@ -2,7 +2,7 @@ const slider = document.getElementById("settingsRange");
 const output = document.getElementById("settingsValue");
 const playButton = document.getElementById('playButton');
 // const URL = 'http://rop.robinverona.com' 
-const URL = 'http://localhost:5500' 
+const URL = 'http://127.0.0.1:5500' 
 let valueToSave = 10;
 
 localStorage.clear();
