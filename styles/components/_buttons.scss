@@ -1,7 +1,8 @@
 #playButton {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    width: max-content;
+    // height: 30px;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
     transition: all 0.2s ease-out;
     display: flex;
     align-items: center;
@@ -29,6 +30,12 @@
       svg {
         width: 25px;
         height: 25px;
+      }
+
+      & p {
+        font-family: var(--text-body);
+        font-size: var(--font-size-large);
+        letter-spacing: -0.05rem;
       }
     
 }
@@ -70,9 +77,9 @@
 
 @include for-tablet-portrait-up {
     #playButton {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
+        // width: max-content;
+        // height: 70px;
+        // border-radius: 50%;
         transition: all 0.2s ease-out;
         display: flex;
         align-items: center;
@@ -102,7 +109,7 @@
             box-shadow: 0px 0px 10px 3px #111;
     
             & svg {
-                fill: white;
+                fill: white!important;
             }
           }
         
@@ -117,7 +124,7 @@
         height: 100%;
         width: 0;
         position: absolute;
-        background-color: var(--color-on-bg);
+        background-color: black;
         opacity: 10%;
         transition: all 0.4s;
     }
@@ -146,11 +153,12 @@
         justify-content: center;
         align-items: center;
         position: static;
-
         // transition: 1.5 ease;
 
         & .link {
             font-size: 64px;
+            letter-spacing: -0.25rem;
+            font-weight: 400;
 
         }
     }

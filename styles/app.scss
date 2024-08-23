@@ -7,11 +7,11 @@
 @import './layout/base';
 @import './layout/header';
 @import './layout/footer';
-@import './layout/share';
+@import './layout/index';
 @import './layout/gallery';
-@import './layout/about';
-@import './layout/results';
 
+
+@import './components/circle-transition';
 @import './components/link';
 @import './components/card';
 @import './components/buttons';

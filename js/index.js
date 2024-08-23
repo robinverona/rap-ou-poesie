@@ -22,6 +22,7 @@ function saveUserInput() {
         valueToSave
     )
 }
+const squares = document.querySelectorAll('.square');
 
 // const squares = [squareOne.value, squareTwo.value, squareThree.value, squareFour.value]
 // const persos = [persoOne.value, persoTwo.value, persoThree.value, persoFour.value, persoFive.value, persoSix.value]
@@ -40,21 +41,20 @@ function saveUserInput() {
 //     ease: 'expo.inOut'
 //   }, '<')
 // })
-// const tl = gsap.timeline()
-// const squares = document.querySelectorAll('.square');
+const tl = gsap.timeline()
 
-// const random = (min, max) => {
-//   return Math.floor(Math.random() * (max - min + 1)) + min
-// }
+const random = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
 
-// squares.forEach((el) => {
-//   tl.from(el, {
-//     transform: `translate(-50%, -50%) rotate(${random(0, 360)}deg)`,
-//     opacity: 0,
-//     duration: 2,
-//     ease: 'expo.inOut'
-//   }, '<')
-// })
+squares.forEach((el) => {
+  tl.from(el, {
+    transform: `translate(-50%, -50%) rotate(${random(0, 360)}deg)`,
+    opacity: 0,
+    duration: 2,
+    ease: 'expo.inOut'
+  }, '<')
+})
 
 
 
